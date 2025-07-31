@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weatherly</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <link rel="stylesheet" href="Weatherly.css">
+</head>
+<body>
+  <div class="full-width">
+    <div class="main-container">
+      <div class="weather-side flex">
+          <div class="date-container">
+            <h2 class="date-dayname">Tuesday</h2>
+            <span class="date-day">19 November 2023</span>
+            <br>
+            <i class="fa-solid fa-location-dot"></i>
+            <span class="location">Mumbai,India</span>
+          </div>
+          <div class="weather-container">
+            <i class="fa-solid fa-sun icon"></i>
+            <h1 class="weather-temp">32°C</h1>
+            <h3 class="weather-description">Sunny</h3>
+          </div>
+      </div>
+
+    
+      <!--Right Side -->
+        <div class="info-side">
+          <div class="search-container">
+            <input type="search" placeholder="Search for places" class="search-box">
+            <button>Search</button>
+          </div>
+          <div class="today-info-container">
+            <div class="today-info">
+              <div class="percipitation flex">
+                <span class="title">Percipitation</span>
+                <span class="value">0%</span>
+              </div>
+              <div class="humidity flex">
+                  <span class="title">Humidity</span>
+                  <span class="value">34%</span>
+              </div>
+              <div class="wind flex">
+                  <span class="title">Wind</span>
+                  <span class="value">0 kmph</span>
+              </div>
+            </div>
+          </div>
+                  <div class="week-container">
+          
+            <ul class="week-list flex">
+
+              <li class="active">
+                <i class="fa-solid fa-sun icon"></i>
+                <span class="day-name">Tue</span>
+                <span class="day-temp">32°C</span>
+              </li>
+              
+              <li>
+                <i class="fa-solid fa-cloud-showers-heavy icon"></i>
+                <span class="day-name">Wed</span>
+                <span class="day-temp">17°C</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-snowflake icon"></i>
+                <span class="day-name">Thu</span>
+                <span class="day-temp">9°C</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-poo-storm icon"></i>
+                <span class="day-name">Fri</span>
+                <span class="day-temp">11°C</span>
+              </li>
+
+
+            </ul>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<script type="module" src="./src/Weatherly.js"></script>
+</body>
+</html>

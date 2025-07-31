@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.full-container {
+  width: 100%;
+  background-color: #212121;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fix-width {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.display-none {
+  display: none;
+}
+/* chat-box */
+.chat-box {
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* upper body */
+.upper-container {
+  width: 100%;
+  padding: 0.5rem 3rem;
+}
+
+.upper-container .left {
+  color: rgb(180, 180, 180);
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+.upper-container .right {
+  color: rgb(236, 236, 236);
+}
+.upper-container .right .temp {
+  gap: 5px;
+}
+
+/* response body */
+
+.response-container {
+  color: rgb(227, 227, 227);
+  min-height: 50vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 1rem;
+  width: 100%;
+}
+.response-container .question-asked {
+  max-width: 500px;
+  margin-left: auto;
+  padding: 0.8rem 1.2rem;
+  border-radius: 2rem;
+  background-color: #303030;
+  margin-bottom: 1rem;
+}
+.response-container .response-text {
+  max-width: 600px;
+}
+
+/* ask body */
+.ask-container {
+  color: rgb(227, 227, 227);
+  padding: 1rem;
+}
+.ask-container h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.ask-anything-container {
+  background-color: #303030;
+  /* width: 800px; */
+  border-radius: 1.5rem;
+  padding: 1rem 1.5rem;
+}
+.ask-anything-container .ask {
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+  border: none;
+  color: rgb(236, 236, 236);
+}
+.ask::placeholder {
+  color: rgb(236, 236, 236);
+}
+
+.ask-tools .icon {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  border: 1px solid rgba(180, 180, 180, 0.493);
+  color: rgb(180, 180, 180);
+  background-color: transparent;
+}
+.ask-tools .tools {
+  gap: 0.4rem;
+  margin-top: 1.4rem;
+}
+.ask-tools .icon svg {
+  width: 20px;
+  height: 20px;
+  color: rgb(180, 180, 180);
+}
+.ask-tools .right .icon {
+  background-color: rgb(236, 236, 236);
+}
+.ask-tools .right .icon svg {
+  color: black;
+}
+.ask-tools .icon:nth-child(3) {
+  border-radius: 5rem;
+  width: 85px;
+}
+
+.footer h6 {
+  color: rgb(180, 180, 180);
+}
+
+@media (max-width: 850px) {
+  .upper-container {
+    padding: 1rem;
+    max-width: 800px;
+  }
+}
+@media (max-width: 680px) {
+  .response-container .question-asked {
+    width: 81%;
+  }
+  .response-container .response-text {
+    width: 81%;
+  }
+}
+@media (max-width: 450px) {
+  .ask-container h1 {
+    font-size: 1.5rem;
+  }
+}
